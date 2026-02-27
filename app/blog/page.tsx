@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ScrollReveal from "../components/ScrollReveal";
+import SmoothScroll from "../components/SmoothScroll";
 import SiteFooter from "../components/SiteFooter";
 import SiteHeader from "../components/SiteHeader";
 
@@ -10,12 +11,34 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://ademaswahyu.my.id/blog",
   },
+  openGraph: {
+    title: "Blog | Ade Mas Wahyu",
+    description:
+      "Artikel seputar full stack web development, Next.js, TypeScript, dan engineering workflow.",
+    url: "https://ademaswahyu.my.id/blog",
+    images: [
+      {
+        url: "/og-cover.svg",
+        width: 1200,
+        height: 630,
+        alt: "Blog Ade Mas Wahyu",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog | Ade Mas Wahyu",
+    description:
+      "Artikel seputar full stack web development, Next.js, TypeScript, dan engineering workflow.",
+    images: ["/og-cover.svg"],
+  },
 };
 
 export default function BlogPage() {
   return (
     <>
       <ScrollReveal />
+      <SmoothScroll />
       <SiteHeader />
       <main className="mx-auto grid w-[min(1060px,92vw)] gap-8 py-10">
         <section

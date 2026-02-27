@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import SmoothScroll from "./components/SmoothScroll";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -35,12 +34,21 @@ export const metadata: Metadata = {
     title: "Ade Mas Wahyu | Full Stack Web Developer",
     description:
       "Portofolio Ade Mas Wahyu: Full Stack Web Developer untuk website modern, cepat, scalable, dan user-friendly.",
+    images: [
+      {
+        url: "/og-cover.svg",
+        width: 1200,
+        height: 630,
+        alt: "Ade Mas Wahyu | Full Stack Web Developer",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Ade Mas Wahyu | Full Stack Web Developer",
     description:
       "Portofolio Ade Mas Wahyu: Full Stack Web Developer untuk website modern, cepat, scalable, dan user-friendly.",
+    images: ["/og-cover.svg"],
   },
   robots: {
     index: true,
@@ -61,19 +69,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body className="antialiased">
-        <SmoothScroll />
-        {children}
-      </body>
+    <html lang="id" suppressHydrationWarning>
+      <body className="antialiased" suppressHydrationWarning>{children}</body>
     </html>
   );
 }

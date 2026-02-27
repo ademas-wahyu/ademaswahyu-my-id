@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Ade Mas Wahyu favicon">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8fd2ff" />
+      <stop offset="55%" stop-color="#2f8cff" />
+      <stop offset="100%" stop-color="#1d4f8f" />
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8f1ff" />
+      <stop offset="100%" stop-color="#8bc8ff" />
+    </linearGradient>
+  </defs>
+
+  <rect x="12" y="12" width="232" height="232" rx="56" fill="url(#bg)" />
+  <rect x="24" y="24" width="208" height="208" rx="48" fill="none" stroke="url(#ring)" stroke-width="6" opacity="0.75" />
+
+  <circle cx="128" cy="126" r="62" fill="#0f2f53" opacity="0.18" />
+
+  <path d="M72 172l30-88h18l30 88h-16l-7-22H95l-7 22H72zm27-36h24l-12-37-12 37z" fill="#eef9ff" />
+  <path d="M154 172V84h18l24 42 24-42h18v88h-16v-57l-23 39h-6l-23-39v57h-16z" fill="#eef9ff" />
+</svg>
